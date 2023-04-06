@@ -12,15 +12,16 @@
             foreach (var harf in kelime)
             {
                 bool kontrol = false;
-                for (int i = 1; i < harf.Length; i++)
+                for (int i = 0; i < harf.Length - 1; i++)
                 {
-                   if (unsuz.Contains(harf[i]) && unsuz.Contains(harf[i + 1]));
-                   {
+                   if (unsuz.Contains(harf[i]) && unsuz.Contains(harf[i + 1]))
+                    {
                         kontrol = true;
-                        break;
-                   } 
+                        
+                    }
+
                 }
-                Console.Write(" "+ kontrol);
+                    Console.Write(" "+ kontrol);
             }
 
         }
